@@ -1,7 +1,7 @@
-const Header = ({ children }) => {
+const Header = ({ children, className }) => {
 
     return (
-        <header>
+        <header className={className + " " + "mt-[45px] flex items-center justify-between"}>
             { children }
         </header>
     )
