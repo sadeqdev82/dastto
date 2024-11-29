@@ -19,5 +19,8 @@ dist-ssr
 *.suo
 *.ntvs*
 *.njsproj
+dist
+./dist
+/dist
 *.sln
 *.sw?
