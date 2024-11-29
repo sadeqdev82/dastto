@@ -4,6 +4,7 @@ import Logo from "../../components/shared/header/Logo.jsx";
 import Nav from "../../components/shared/header/Nav.jsx";
 import NavItem from "../../components/shared/header/NavItem.jsx";
 import Button from "../../components/shared/Button.jsx";
+import Main from "../../components/main/Main.jsx";
 
 
 export default function HomeLayouts() {
@@ -20,6 +21,7 @@ export default function HomeLayouts() {
                 </Nav>
                 <Button to={'#'}>بزن بریم حاجی</Button>
             </Header>
+            <Main />
         </Container>
     )
 }
