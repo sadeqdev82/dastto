@@ -16,4 +16,4 @@ createRoot(document.getElementById('root')).render(<StrictMode>
             <Route path="*" element={<NotFound />}/>
         </Routes>
     </Router>
-</StrictMode>,)
+</StrictMode>)
