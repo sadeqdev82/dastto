@@ -1,7 +1,7 @@
 const Header = ({ children, className }) => {
 
     return (
-        <header className={className + " " + "mt-[45px] flex items-center justify-between"}>
+        <header className={className + " " + "mt-[45px] items-center justify-between"}>
             { children }
         </header>
     )

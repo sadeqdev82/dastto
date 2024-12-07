@@ -30,14 +30,18 @@ const Logo = ({ className, grow = true, logo = 1 }) => {
             </Link>
         }else if (logo === 2){
             return <img src={"/images/logo.png"} alt={"logo"} className={className}/>
+        }else if (logo === 3){
+            return <Link to={"/"} className={(grow === true ? "grow" : " ") + " " + className}>
+                <img src={"/images/logo_1.2.svg"} alt={"logo"} className={className}/>
+            </Link>
         }
     }
 
     return (
         <>
-            { handler() }
-        </>
-    )
+            {handler()}
+    </>
+)
 }
 
 export default Logo;
