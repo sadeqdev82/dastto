@@ -39,19 +39,6 @@ const Main = () => {
                         داشته باش
                     </span>
                 </div>
-                <div className={'flex justify-center items-center gap-1'}>
-                    <span className={'text-[45px]'}>روی</span>
-                    <div className={'relative w-[85px] h-[62px]'}>
-                        <Image src={'/images/dribbble.svg'} alt={'dribbble'}
-                               className={'top-0 right-0 absolute w-[62px] h-[62px] rounded-[20px] overflow-hidden opacity-70 rotate-[15deg]'}/>
-                        <Image src={'/images/pinterest.svg'} alt={'pinterest'}
-                               className={'top-0 left-0 absolute w-[62px] h-[62px] rounded-[20px] overflow-hidden rotate-[-15deg]'}/>
-                    </div>
-                    <span className={'text-[45px] font-semibold'}>
-                    <span className={'font-bold'}> موبایلتون </span>
-                     دست
-                </span>
-                </div>
                 <Paragraph className={''}>تقویم، تودولیست، اینترنت، ابزار مالی و ... یک‌جا و متصل</Paragraph>
                 <div className={'flex justify-center items-center gap-3'}>
                     <Button>دانلود اپلیکیشن</Button>
