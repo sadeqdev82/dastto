@@ -37,4 +37,10 @@
     .text-shadow-1{
         text-shadow: -14px 14px 10px rgba(76, 115, 255, 0.25);
     }
+
+    .bg-login{
+        background-image: url("../images/bg-1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
