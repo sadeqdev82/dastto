@@ -14,9 +14,10 @@ const NavItem = ({className, children, to, nav = 1}) => {
     }, [location])
 
     return (<>
-            <li className={className + " " + (active ? "!text-[#000000B2] relative before:inline-block before:absolute before:bottom-[-5px] before:right-1/2 before:transform before:translate-x-1/2 before:w-[15px] before:h-[4px] before:bg-black before:rounded-full" : "") + ' ' + 'text-[18px] font-semibold text-[#96979E99]'}>
+            <li className={className + " " + (active ? "!text-[#000000B2] relative before:inline-block before:absolute before:bottom-[-14px] before:right-1/2 before:transform before:translate-x-1/2 before:w-[20px] before:h-[4px] before:bg-[#443EFF] before:rounded-full" : "") + ' ' + 'text-[17px] font-semibold text-[#96979E99]'}>
                 <Link to={to}>{children}</Link>
             </li>
+
         </>)
 }
 

@@ -1,7 +1,5 @@
-import Logo from "../shared/header/Logo.jsx";
 import Image from "../shared/Image.jsx";
 import Paragraph from "../shared/Paragraph.jsx";
-import Button from "../shared/Button.jsx";
 
 const Main = () => {
 
@@ -10,7 +8,6 @@ const Main = () => {
             <main className={"mt-[120px] w-full flex flex-col justify-center items-center gap-2"}>
                 <div className={'flex lg:flex-row flex-col justify-center items-center gap-1'}>
                     <div className="flex justify-center items-center gap-1">
-                        <Logo logo={2} className={"w-[63px]"}/>
                         <span className={'font-bold text-[45px]'}>با</span>
                         <svg className={'m-0 lg:mb-2'} xmlns="http://www.w3.org/2000/svg" width="84" height="33"
                              viewBox="0 0 84 33"
@@ -35,14 +32,14 @@ const Main = () => {
                     </div>
                     <span className={'text-[45px] font-semibold text-center'}>
                         دست
-                        <span className={'font-bold text-[#4C73FF]'}> سوم </span>
+                        <span className={'font-bold text-[#443EFF]'}> سوم </span>
                         داشته باش
                     </span>
                 </div>
                 <Paragraph className={''}>تقویم، تودولیست، اینترنت، ابزار مالی و ... یک‌جا و متصل</Paragraph>
                 <div className={'flex justify-center items-center gap-3'}>
-                    <Button>دانلود اپلیکیشن</Button>
-                    <Button style={'secondary'}>دانلود وب اپ</Button>
+                    {/*<Button>دانلود اپلیکیشن</Button>*/}
+                    {/*<Button style={'secondary'}>دانلود وب اپ</Button>*/}
                 </div>
             </main>
         </>

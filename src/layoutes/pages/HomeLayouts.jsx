@@ -1,13 +1,12 @@
 import Container from "../../components/shared/Container.jsx";
 import Header from "../../components/shared/header/Header.jsx";
-import Logo from "../../components/shared/header/Logo.jsx";
 import Nav from "../../components/shared/header/Nav.jsx";
+import MainNav from "../../components/main/Nav.jsx";
 import NavItem from "../../components/shared/header/NavItem.jsx";
-import Button from "../../components/shared/Button.jsx";
+import MainNavItem from "../../components/main/NavItem.jsx";
 import Main from "../../components/main/Main.jsx";
 import Image from "../../components/shared/Image.jsx";
-import Svg from "../../components/shared/Svg.jsx";
-import {useState} from "react";
+import {Link} from "react-router-dom";
 
 
 export default function HomeLayouts() {
@@ -16,36 +15,32 @@ export default function HomeLayouts() {
         <Container>
             {/*Menu*/}
             <Header className={'hidden lg:flex'}>
-                <Logo/>
+                <Link to={"/"} className={"grow"}>
+                    <Image src={"/images/logo2.png"} />
+                </Link>
                 <Nav>
                     <NavItem to={"/"}>خانه</NavItem>
                     <NavItem to={"#"}>خلاقانه</NavItem>
                     <NavItem to={"#"}>ارتباط</NavItem>
                     <NavItem to={"#"}>اشتراک</NavItem>
                 </Nav>
-                <Button to={'#'}>بزن بریم حاجی</Button>
-            </Header>
-            {/*Responsive Menu*/}
-            <Header className={'flex lg:hidden'}>
-                <Button style={'secondary'}
-                        className={'min-w-[auto] !p-0 w-[55px] h-[56px] flex justify-center items-center !rounded-[11px]'}
-                        parentClassName={'!justify-start'}>
-                        <Svg id={1}/>
-                </Button>
-                <Button to={'#'} parentClassName={'justify-center'}>بزن بریم حاجی</Button>
-                <Logo logo={3} className={'justify-end flex'}/>
+                <div className="grow flex justify-end items-center">
+                    <Link to={"/"} className={"min-w-[135px] px-4 py-2 h-[45px] bg-[#443EFF] rounded-[505px] justify-center items-center gap-2.5 inline-flex text-white text-[18px] font-semibold"}>
+                        بزن بریم حاجی
+                    </Link>
+                </div>
             </Header>
             {/*Main*/}
             <Main/>
             {/*Nav*/}
-            <Nav nav={2}>
-                <NavItem to={"/"} nav={2}>خانه</NavItem>
-                <NavItem to={"#"} nav={2}>خلاقانه</NavItem>
-                <NavItem to={"#"} nav={2}>ارتباط</NavItem>
-                <NavItem to={"#"} nav={2}>اشتراک</NavItem>
-            </Nav>
+            <MainNav>
+                <MainNavItem to={"/"}>خانه</MainNavItem>
+                <MainNavItem to={"#"}>خلاقانه</MainNavItem>
+                <MainNavItem to={"#"}>ارتباط</MainNavItem>
+                <MainNavItem to={"#"}>اشتراک</MainNavItem>
+            </MainNav>
             {/*Template*/}
-            <Image src={'/images/Template.png'} alt={'template'} className={'mx-auto mt-14 mb-10'}/>
+            <Image src={'/images/Template.png'} alt={'template'} className={'mx-auto mt-14 mb-10 w-[402px]'}/>
         </Container>
     )
 }
