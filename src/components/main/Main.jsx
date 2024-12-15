@@ -6,7 +6,7 @@ const Main = () => {
     return (
         <>
             <main className={"mt-[120px] w-full flex flex-col justify-center items-center gap-2"}>
-                <div className={'flex lg:flex-row flex-col justify-center items-center gap-1'}>
+                <div className={'flex lg:flex-row flex-col justify-center items-center gap-1 tracking-[-3px]'}>
                     <div className="flex justify-center items-center gap-1">
                         <span className={'font-bold text-[45px]'}>با</span>
                         <svg className={'m-0 lg:mb-2'} xmlns="http://www.w3.org/2000/svg" width="84" height="33"
