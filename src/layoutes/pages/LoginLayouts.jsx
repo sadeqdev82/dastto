@@ -7,6 +7,7 @@ export default function LoginLayouts() {
 
     return (
         <Container>
+            <Header />
             {/*Login*/}
             <Login />
         </Container>
