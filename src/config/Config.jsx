@@ -8,6 +8,10 @@ const Config = () => {
 
     }, [location]);
 
+    function log(message){
+        console.log(message)
+    }
+
     return null
 }
 

@@ -2,10 +2,13 @@ import {Link} from "react-router-dom";
 import Image from "../Image.jsx";
 import Nav from "./Nav.jsx";
 import NavItem from "./NavItem.jsx";
+import Modal from "../Modal.jsx";
+import {useState} from "react";
 
 const Header = ({ className }) => {
+    const [loginModalOpen, setLoginModalOpen] = useState(false);
 
-    return (
+    return (<>
         <header className={className + " " + "hidden lg:flex mt-[45px] items-center justify-between"}>
             <Link to={"/"} className={"grow"}>
                 <svg width="115" height="37" viewBox="0 0 115 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,13 +42,19 @@ const Header = ({ className }) => {
                 <NavItem to={"#"}>اشتراک</NavItem>
             </Nav>
             <div className="grow flex justify-end items-center">
-                <Link to={"/login"}
-                      className={"min-w-[135px] px-4 py-2 h-[45px] bg-[#443EFF] rounded-[505px] justify-center items-center gap-2.5 inline-flex text-white text-[18px] font-semibold"}>
+                <button className={"min-w-[135px] px-4 py-2 h-[45px] bg-[#443EFF] rounded-[505px] justify-center items-center gap-2.5 inline-flex text-white text-[18px] font-semibold"} onClick={() => {
+                    setLoginModalOpen(true)
+                }}>
                     بزن بریم حاجی
-                </Link>
+                </button>
             </div>
         </header>
-    )
+        <Modal show={loginModalOpen} callback={() => {
+            setLoginModalOpen(false)
+        }}>
+
+        </Modal>
+    </>)
 }
 
 export default Header;

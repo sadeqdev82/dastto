@@ -1,7 +1,8 @@
 import {Link} from "react-router-dom";
 import Image from "../shared/Image.jsx";
+import NavItem from "./NavItem.jsx";
 
-const Nav = ({children}) => {
+const Nav = () => {
 
     return (<>
         <nav
@@ -12,7 +13,10 @@ const Nav = ({children}) => {
                         <Image src={'/images/dasto_black.png'} alt={'dastto black'}/>
                     </Link>
                 </li>
-                {children}
+                <NavItem to={"/"}>خانه</NavItem>
+                <NavItem to={"#"}>خلاقانه</NavItem>
+                <NavItem to={"#"}>ارتباط</NavItem>
+                <NavItem to={"#"}>اشتراک</NavItem>
             </ul>
         </nav>
     </>)

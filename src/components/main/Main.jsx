@@ -1,4 +1,3 @@
-import Image from "../shared/Image.jsx";
 import Paragraph from "../shared/Paragraph.jsx";
 
 const Main = () => {
