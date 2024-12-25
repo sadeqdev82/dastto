@@ -3,7 +3,7 @@ import Header from "../../components/shared/header/Header.jsx";
 import Nav from "../../components/main/Nav.jsx";
 import Main from "../../components/main/Main.jsx";
 import Image from "../../components/shared/Image.jsx";
-import Modal from "../../components/shared/Modal.jsx";
+import { Helmet } from "react-helmet";
 
 export default function HomeLayouts() {
 
